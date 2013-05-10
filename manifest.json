@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Stocks",
+  "version": "1",
+  "icons": {
+    "128": "128.png"
+  },
+  "app": {
+    "launch": {
+        "local_path" : "index.html"
+    }
+  },
+  "permissions": [
+    "storage",
+    "http://finance.yahoo.com/",
+    "http://d.yimg.com/"
+  ],
+  "content_security_policy": "script-src 'self' http://finance.yahoo.com/; object-src 'self'"
+  
+}
